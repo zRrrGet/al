@@ -17,7 +17,7 @@ parser = argparse.ArgumentParser(
                     description='Show all EXECUTABLE files that use specified shared library files.',
                     epilog='Example: python3 bldd.py -d /bin -l libc.so.6 -o prettyreport.txt')
 
-parser.add_argument('-l', '--lib', metavar='./mylib.so',
+parser.add_argument('-l', '--lib', metavar='lib.so',
                     type=str, help='Library file to check when searching for executables. By default, every lib is taken into account.',
                     required=False)
 parser.add_argument('-d', '--directory', metavar='/my/superb/dir',
